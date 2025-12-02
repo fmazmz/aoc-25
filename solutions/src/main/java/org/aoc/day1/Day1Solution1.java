@@ -18,10 +18,11 @@ import java.util.Scanner;
  *
  * <p>Usage:</p>
  * <ul>
- *   <li>mvn compile</li>
- *   <li>java -cp org.aoc.day1.Day1Solution1 org.example.Day1</li>
+ *   <li>javac -d out src/main/java/org/aoc/day1/Day1Solution1.java </li>
+ *   <li>java -cp out org.aoc.day1.Day1Solution1</li>
  *   <li>Paste raw input from AOC::2025/day/1/input</li>
  * </ul>
+ * OR run the application from your IDE
  */
 
 public class Day1Solution1 {

@@ -5,10 +5,10 @@
 Contributions are welcome!
 
 ### Project Structure
-- Each day/problem should have its **own package**, e.g.:
+- Each day should have its **own package**, e.g.:
 ```java
-  org.day1
-  org.day2
+  org.aoc.day1
+  org.aoc.day2
 ```
 - Each solution should have its **own class**, e.g.:
 
