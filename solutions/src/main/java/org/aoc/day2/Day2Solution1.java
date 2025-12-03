@@ -38,6 +38,7 @@ public class Day2Solution1 {
         }
         scanner.close();
         run(ranges);
+        partTwo(ranges);
     }
 
     // Checks for repeated ID sequence
@@ -67,7 +68,52 @@ public class Day2Solution1 {
                 if (isInvalid(i)) sum += i;
             }
 
-            log.info("Sum for range {}-{}: {}", start, end, sum);
+            //log.info("Sum for range {}-{}: {}", start, end, sum);
+            totalSum += sum;
+        }
+
+        System.out.println("Total sum of invalid IDs: " + totalSum);
+    }
+    static boolean isInvalidPartTwo(long n) {
+        String s = Long.toString(n);
+        int len = s.length();
+
+        for (int seqLen = 1; seqLen <= len / 2; seqLen++) {
+
+            // Sequence length should divide evenly
+            if (len % seqLen != 0) continue;
+
+
+            int repeats = len / seqLen; // amount of repetitions (e.g. len = 6, seqLen = 2, repeats = 6/2=3)
+            String pattern = s.substring(0, seqLen);
+            boolean allMatch = true;
+
+            for (int i = 1; i < repeats; i++) {
+                if (!s.substring(i * seqLen, (i + 1) * seqLen).equals(pattern)) {
+                    allMatch = false;
+                    break;
+                }
+            }
+
+            if (allMatch) return true;
+        }
+
+        return false;
+    }
+
+    static void partTwo(List<String> ranges) {
+        long totalSum = 0;
+
+        for (String range : ranges) {
+            long start = Long.parseLong(range.split("-")[0]);
+            long end = Long.parseLong(range.split("-")[1]);
+            long sum = 0;
+
+            for (long i = start; i <= end; i++) {
+                if (isInvalidPartTwo(i)) sum += i;
+            }
+
+            //log.info("Sum for range {}-{}: {}", start, end, sum);
             totalSum += sum;
         }
 
