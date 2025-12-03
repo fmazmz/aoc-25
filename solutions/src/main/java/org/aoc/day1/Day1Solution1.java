@@ -35,6 +35,7 @@ public class Day1Solution1 {
             if (line.isEmpty()) continue;
             rotations.add(line);
         }
+        scanner.close();
         run(rotations);
     }
 
