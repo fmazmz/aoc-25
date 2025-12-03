@@ -18,9 +18,9 @@ import java.util.Scanner;
  *
  * <p>Usage:</p>
  * <ul>
- *   <li>javac -d out src/main/java/org/aoc/day1/Day1Solution1.java </li>
- *   <li>java -cp out org.aoc.day1.Day1Solution1</li>
- *   <li>Paste raw input from AOC::2025/day/1/input</li>
+ *   <li>javac -d out src/main/java/org/aoc/<day>/<className>.java </li>
+ *   <li>java -cp out org.aoc.<day>.<className></li>
+ *   <li>Paste raw input from AOC.com::/2025/day/<dayNumber>/input</li>
  * </ul>
  * OR run the application from your IDE
  */
