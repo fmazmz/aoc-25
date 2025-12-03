@@ -56,7 +56,7 @@ public class Day2Solution1 {
     }
 
 
-    static void run(List<String> ranges) {
+    public static long run(List<String> ranges) {
         long totalSum = 0;
 
         for (String range : ranges) {
@@ -73,6 +73,7 @@ public class Day2Solution1 {
         }
 
         System.out.println("Total sum of invalid IDs: " + totalSum);
+        return totalSum;
     }
     static boolean isInvalidPartTwo(long n) {
         String s = Long.toString(n);
@@ -101,7 +102,7 @@ public class Day2Solution1 {
         return false;
     }
 
-    static void partTwo(List<String> ranges) {
+    public static long partTwo(List<String> ranges) {
         long totalSum = 0;
 
         for (String range : ranges) {
@@ -118,5 +119,6 @@ public class Day2Solution1 {
         }
 
         System.out.println("Total sum of invalid IDs: " + totalSum);
+        return totalSum;
     }
 }
