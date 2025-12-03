@@ -85,7 +85,7 @@ public class Day2Solution1 {
             if (len % seqLen != 0) continue;
 
 
-            int repeats = len / seqLen; // amount of repetitions (e.g. len = 6, seqLen = 2, repeats = 6/2=3)
+            int repeats = len / seqLen; // amount of repetitions (e.g. len = 6, seqLen = 2, repeats = 6/2 = 3)
             String pattern = s.substring(0, seqLen);
             boolean allMatch = true;
 
