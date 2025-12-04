@@ -34,7 +34,7 @@ public class Day3Solution1 {
         System.out.println("Total Output Joltage: " + totalOutputJoltage);
     }
 
-    static int calculateTotalOutputJoltage(List<String> banks) {
+    public static int calculateTotalOutputJoltage(List<String> banks) {
         int totalJoltage = 0;
 
         for (String bank : banks) {
