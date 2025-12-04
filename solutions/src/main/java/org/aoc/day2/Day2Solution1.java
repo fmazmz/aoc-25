@@ -3,15 +3,37 @@ package org.aoc.day2;
 import org.slf4j.LoggerFactory;
 
 import java.util.*;
-
 /**
  * <p>
  * Advent of Code Day 2: Gift Shop
  * </p>
  * <p>
- * Reads rotations from CLI input (one per line), simulates a circular dial from 0 to 99
- * starting at 50, and counts how many times the dial lands at 0.
- * End input with Ctrl+D (Linux/Mac) or Ctrl+Z + Enter (Windows).
+ * You enter the gift shop and discover that some invalid product IDs have been added to the database.
+ * Your task is to identify these invalid product IDs based on specific criteria.
+ * </p>
+ *
+ * <p>
+ * You will read product ID ranges from CLI input, where each range specifies a minimum and maximum ID.
+ * Each range is separated by commas, and within each range, IDs can be checked for validity based on a pattern.
+ * </p>
+ *
+ * <p>
+ * An ID is considered invalid if it is made solely of a sequence of digits repeated exactly twice.
+ * For example, 55 (5 twice), 6464 (64 twice), and 123123 (123 twice) are invalid IDs.
+ * An ID with leading zeroes, such as 0101, is not valid and should be disregarded.
+ * </p>
+ *
+ * <p>
+ * Your job is to find and sum up all the invalid IDs that fall within the given ranges, producing a total value.
+ * </p>
+ *
+ * <p>
+ * Input Example:
+ * <pre>
+ * 11-22,95-115,998-1012,1188511880-1188511890,222220-222224,
+ * 1698522-1698528,446443-446449,38593856-38593862,565653-565659,
+ * 824824821-824824827,2121212118-2121212124
+ * </pre>
  * </p>
  *
  * <p>Usage:</p>
@@ -22,6 +44,7 @@ import java.util.*;
  * </ul>
  * OR run the application from your IDE
  */
+
 
 public class Day2Solution1 {
     //static {System.setProperty("org.slf4j.simpleLogger.defaultLogLevel", "debug");}
