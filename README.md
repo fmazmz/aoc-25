@@ -3,7 +3,8 @@
 [Day1Solution1.java](https://github.com/fmazmz/aoc-25/blob/master/solutions/src/main/java/org/aoc/day1/Day1Solution1.java)
 <br></br>
 [Day2Solution1.java](https://github.com/fmazmz/aoc-25/blob/master/solutions/src/main/java/org/aoc/day2/Day2Solution1.java)
-
+<br></br>
+[Day3Solution1.java](https://github.com/fmazmz/aoc-25/blob/master/solutions/src/main/java/org/aoc/day2/Day3Solution1.java)
 ## Contribution
 
 Contributions are welcome!
